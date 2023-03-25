@@ -1,0 +1,16 @@
+서버가 시작이 되면 컨트롤러에서 매핑이 되었는지 찾아본다.
+"hello-mvc" 가 매핑 되어있다.
+매핑 된 멤버를 불러오고 return 한 값에 있는 "hello-template" 파일을
+뷰 리졸버가 동작하여 뷰에서 찾음
+파일을 변환한 후 웹 브라우저에 반환
+
+서버가 시작이 되면 컨트롤러에서 매핑이 되었는지 찾아본다.
+"hello-api" 가 매핑 되어있다.
+@ResponseBody 가 있는 경우 http에 그대로 응답을 넘겨야겠다고 생각함
+hello 객체를 반환함
+객체를 반환할 경우 json 방식으로 반환함(키, 값)
+HttpMessageConverter가 동작 
+객체면 jsonconverter, string은 stringconverter가 동작함
+객체일 경우 잭슨 라이브러리에서 처리함
+
+
